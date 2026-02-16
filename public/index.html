@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rap Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">RAP GENERATOR</h1>
+    <p class="subtitle">Drop bars about anyone</p>
+
+    <form id="rap-form">
+      <div class="form-group">
+        <label for="name">Who's getting roasted?</label>
+        <input type="text" id="name" placeholder="Enter their name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="context">Tell us about them</label>
+        <textarea id="context" rows="3" placeholder="e.g. loves coding, always late to meetings, obsessed with coffee"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="style">Rapper Style</label>
+        <select id="style" required>
+          <option value="eminem">Eminem - Wordplay King</option>
+          <option value="snoop">Snoop Dogg - Smooth Operator</option>
+          <option value="kendrick">Kendrick Lamar - Lyrical Genius</option>
+          <option value="drake">Drake - In His Feelings</option>
+          <option value="nicki">Nicki Minaj - Bold & Fierce</option>
+          <option value="wayne">Lil Wayne - Punchline Legend</option>
+        </select>
+      </div>
+
+      <button type="submit" id="generate-btn">
+        <span class="btn-text">Generate Rap</span>
+        <span class="btn-loading" hidden>Cooking up bars...</span>
+      </button>
+    </form>
+
+    <div id="output" class="output" hidden>
+      <div class="output-header">
+        <span class="fire">&#127797;</span> YOUR RAP <span class="fire">&#127797;</span>
+      </div>
+      <pre id="rap-text"></pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

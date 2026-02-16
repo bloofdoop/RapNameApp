@@ -1,0 +1,14 @@
+{
+  "name": "rap-name-app",
+  "version": "1.0.0",
+  "description": "Generate personalized raps about anyone in the style of famous rappers",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
